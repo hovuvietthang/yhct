@@ -1,0 +1,46 @@
+
+.nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mattruoc {
+    position: relative;
+    background-color: white;
+}
+.keyHuyet {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: brown;
+}
+@media screen and (max-width : 590px) 
+{
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-left: auto;
+    margin-right : auto;
+    }
+    .offcanvas-end {
+        top: 0;
+        right: 0;
+        width: 70%;
+        border-left: 1px solid rgba(0,0,0,.2);
+        transform: translateX(100%);
+    }
+}
+
+.ct-home {
+    font-family: 'Bungee', cursive;
+}
