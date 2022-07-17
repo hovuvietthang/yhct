@@ -31,6 +31,7 @@ fetch(postAPI)
           "title": "Ảnh huyệt " + post[IdNum].ten_huyet,
           "src": post[IdNum].link_img,
         })
+        $("#c-xacminh").text("Xác minh thông tin đóng góp : "+post[IdNum].xac_minh_thong_tin);
         //  Thông tin người đóng góp
         $("#c-mean").attr({
           "title": "Thông tin được đóng góp bởi : " + post[IdNum].info_1
