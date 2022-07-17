@@ -81,3 +81,8 @@ $('#toa_do_mat_sau').click(function (e) {
   // alert("Tọa độ X : "+ (e.pageX - posX)/(727.5/242) + ' | '+ "Tọa độ Y : " + (e.pageY - posY)/(452/151));
 });
 
+ $("#btn-edit").click(
+  function(){
+    window.open("https://docs.google.com/spreadsheets/d/1mvSsYcNhQuBFjfJLy3fTSYts72Ng_TBMCtXso8DJrgY/edit#gid=0");
+  }
+ )
