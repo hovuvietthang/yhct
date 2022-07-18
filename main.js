@@ -14,9 +14,11 @@ fetch(postAPI)
         var IdNum = Number(Idslice) - 1;
         //  console.log("Sau kh đã ép dữ liệu: "+ Idslice + "| kiểu dữ liệu : " + typeof IdNum)
         var urlCmt = $(".fb-comments").attr("data-href")
-      var urlCmt1 = urlCmt + post[IdNum].ky_hieu;
-        console.log("linkcmt : "+urlCmt1);
-        $("#cmt-fb").attr({"data-href": urlCmt1})
+        var idRange =  Number(Idslice)+1;
+      // var urlCmt1 = urlCmt + post[IdNum].ky_hieu;
+        console.log("linkcmt : "+ urlCmt + post[IdNum].ky_hieu);
+        $("#cmt-fb").attr({"data-href": urlCmt})
+
         $("#c-name").text(post[IdNum].ten_huyet);
         $("#c-sign").text(post[IdNum].ky_hieu);
         $("#c-mean").text(post[IdNum].y_nghia);
@@ -51,6 +53,10 @@ fetch(postAPI)
         $("#c-chutri").attr({
           "title": "Thông tin được đóng góp bởi : " + post[IdNum].info_5
         });
+        $("#btn-edit").attr({
+          "href" : "https://docs.google.com/spreadsheets/d/1mvSsYcNhQuBFjfJLy3fTSYts72Ng_TBMCtXso8DJrgY/edit#gid=0&range=K"+ idRange +":"+idRange
+        })  
+        
       });
     });
 
@@ -81,8 +87,4 @@ $('#toa_do_mat_sau').click(function (e) {
   // alert("Tọa độ X : "+ (e.pageX - posX)/(727.5/242) + ' | '+ "Tọa độ Y : " + (e.pageY - posY)/(452/151));
 });
 
- $("#btn-edit").click(
-  function(){
-    window.open("https://docs.google.com/spreadsheets/d/1mvSsYcNhQuBFjfJLy3fTSYts72Ng_TBMCtXso8DJrgY/edit#gid=0");
-  }
- )
+ 
