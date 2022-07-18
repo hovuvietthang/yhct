@@ -54,7 +54,7 @@ fetch(postAPI)
           "title": "Thông tin được đóng góp bởi : " + post[IdNum].info_5
         });
         $("#btn-edit").attr({
-          "href" : "https://docs.google.com/spreadsheets/d/1mvSsYcNhQuBFjfJLy3fTSYts72Ng_TBMCtXso8DJrgY/edit#gid=0&range=K"+ idRange +":"+idRange
+          "href" : "https://docs.google.com/spreadsheets/d/1mvSsYcNhQuBFjfJLy3fTSYts72Ng_TBMCtXso8DJrgY/edit#gid=0&range="+ idRange +":"+idRange
         })  
         
       });
