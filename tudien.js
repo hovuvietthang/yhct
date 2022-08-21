@@ -54,6 +54,6 @@ removeIcon.addEventListener("click", ()=>{
     searchInput.focus();
     wrapper.classList.remove("active");
     infoText.style.color = "#9A9A9A";
-    infoText.innerHTML = "Nhập từ ban muốn tìm và chọn từ đề xuất.";
+    infoText.innerHTML = "Nhập từ bạn muốn tìm và chọn cụm từ đề xuất.";
 });
 
