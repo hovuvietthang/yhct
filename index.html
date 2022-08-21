@@ -66,13 +66,17 @@
                         <a class="nav-link active" data-bs-toggle="tab" href="#huyet">HUYỆT</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#dict">TRA CỨU</a>
+                    </li>
+                   
+                    <!-- <li class="nav-item">
                         <p class="nav-link" id="toadoX"
                             title="Tọa độ này phục vụ cho việc chèn Chấm đỏ vào đúng vị trí trên hình">Tọa độ X</p>
                     </li>
                     <li class="nav-item">
                         <p class="nav-link" id="toadoY"
                             title="Tọa độ này phục vụ cho việc chèn Chấm đỏ vào đúng vị trí trên hình">Tọa độ Y</p>
-                    </li>
+                    </li> -->
                     <!-- <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="tab" href="#duongkinh">ĐƯỜNG KINH</a>
                     </li>
@@ -1808,6 +1812,35 @@
                         <p>đây là trang bài thuốc</p>
                         <!-- content in BaiThuoc -->
                     </div>
+                    <div id="dict" class="container tab-pane fade">
+                        <div class="wrapper">
+                            <header>DANH TỪ THUẬT NGỮ Y HỌC CỔ TRUYỀN</header>
+                            <div class="search">
+                              <input type="text" placeholder="Nhập thuật ngữ cần tìm . . ." required spellcheck="false">
+                              <i class="fas fa-search"></i>
+                              <span class="material-icons"><kbd>xóa</kbd></span>
+                            </div>
+                            <p class="info-text">Bạn vui lòng nhập từ cần tìm, và chọn ở đề xuất.</p>
+                            <ul>
+                              <li class="word">
+                                <div class="details">
+                                  <p></p>
+                                </div>
+                                <i class="fas fa-volume-up"></i>
+                              </li>
+                              <div class="content">
+                                <li class="meaning">
+                                  <div class="details">
+                                    <p>Ý nghĩa</p>
+                                    <span></span>
+                                  </div>
+                                </li>
+                              </div>
+                            </ul>
+                          </div>
+                      
+                          <script src="tudien.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1816,7 +1849,7 @@
 
         </div>
     </div>
-    <script type="text/javascript" src="edit-content.js"></script>
+    
     <script src="main.js"></script>
     <script src="keys.js"></script>
 
