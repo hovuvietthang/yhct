@@ -56,3 +56,4 @@ removeIcon.addEventListener("click", ()=>{
     infoText.style.color = "#9A9A9A";
     infoText.innerHTML = "Nhập từ ban muốn tìm và chọn từ đề xuất.";
 });
+

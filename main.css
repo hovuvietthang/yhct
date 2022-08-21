@@ -1,5 +1,5 @@
 
-.nav{
+.nav, #header-dict{
     font-family: 'Bungee', cursive;
     font-weight: 700;
 }
@@ -56,7 +56,7 @@ p{
     border-radius: 7px;
     background: #fff;
     padding: 25px 28px 45px;
-    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05); */
   }
   .wrapper header{
     font-size: 28px;
@@ -123,6 +123,7 @@ p{
     padding-right: 1px;
     overflow-y: hidden;
     transition: all 0.2s ease;
+    padding-left: 1px;
   }
   .wrapper.active ul{
     opacity: 1;
@@ -183,3 +184,6 @@ p{
     margin-right: 5px;
     text-decoration: underline;
   }
+  #word-dict{
+    font-family: 'Bungee', cursive;
+}

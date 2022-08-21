@@ -1814,9 +1814,28 @@
                     </div>
                     <div id="dict" class="container tab-pane fade">
                         <div class="wrapper">
-                            <header>DANH TỪ THUẬT NGỮ Y HỌC CỔ TRUYỀN</header>
+                            <header id="header-dict">DANH TỪ THUẬT NGỮ Y HỌC CỔ TRUYỀN</header>
                             <div class="search">
-                              <input type="text" placeholder="Nhập thuật ngữ cần tìm . . ." required spellcheck="false">
+                              <input list="data-dict" type="text" placeholder="Nhập thuật ngữ cần tìm . . ." required spellcheck="false">
+                              <datalist  id="data-dict">
+                                <script>
+                                    var dictAPI = "https://script.googleusercontent.com/macros/echo?user_content_key=weEdjsbaOi9V5Sj8hqg04mYjnYyEHlEtYStGF5_UB3CNRQc7p37uDBXve_xSgIcokHzZGqzuYIIJCxUAylSOwBKcdqc0QLuhm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnFyZ1HeemG0UxrQdzT7TSGh69265aIG191Bfuk_eg3QgttCpV8Rnr2jwSVh8AvwG0yoH5KvnrJBkAwxpgmi36DRndgPXCYNSzg&lib=MwBrcKygyGkXILEIAl69Fal47xHerzBZE";
+fetch(dictAPI)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (dict) {
+    $(document).ready(function () {
+        var html = "";
+        for( var i=0 ; i <= dict.length; i++){
+            html += '<option value='+'"'+dict[i].word+'"'+'></option>' + '<br>';
+            document.getElementById("data-dict").innerHTML = html; 
+        }
+        
+    });
+});
+                                </script>
+                            </datalist>
                               <i class="fas fa-search"></i>
                               <span class="material-icons"><kbd>xóa</kbd></span>
                             </div>
@@ -1824,7 +1843,7 @@
                             <ul>
                               <li class="word">
                                 <div class="details">
-                                  <p></p>
+                                  <p id="word-dict"></p>
                                 </div>
                                 <i class="fas fa-volume-up"></i>
                               </li>
@@ -1838,7 +1857,7 @@
                               </div>
                             </ul>
                           </div>
-                      
+                         
                           <script src="tudien.js"></script>
                     </div>
                 </div>
