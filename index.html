@@ -1828,7 +1828,7 @@ fetch(dictAPI)
     $(document).ready(function () {
         var html = "";
         for( var i=0 ; i <= dict.length; i++){
-            html += '<option value='+'"'+dict[i].word+'"'+'></option>' + '<br>';
+            html += '<option value='+'"'+dict[i].word+'"'+'>'+dict[i].meanings+'</option>' + '<br>';
             document.getElementById("data-dict").innerHTML = html; 
         }
         
