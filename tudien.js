@@ -57,3 +57,5 @@ removeIcon.addEventListener("click", ()=>{
     infoText.innerHTML = "Nhập từ bạn muốn tìm và chọn cụm từ đề xuất.";
 });
 
+
+
