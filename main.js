@@ -19,14 +19,14 @@ fetch(postAPI)
         console.log("linkcmt : "+ urlCmt + post[IdNum].ky_hieu);
         $("#cmt-fb").attr({"data-href": urlCmt})
 
-        $("#c-name").text(post[IdNum].ten_huyet);
-        $("#c-sign").text(post[IdNum].ky_hieu);
-        $("#c-mean").text(post[IdNum].y_nghia);
-        $("#c-cachxacdinh").text(post[IdNum].vi_tri);
-        $("#c-way").text(post[IdNum].duong_kinh);
-        $("#c-tacdung").text(post[IdNum].tac_dung);
-        $("#c-chutri").text(post[IdNum].chu_tri);
-        $("#c-info").text(
+        $("#c-name").html(post[IdNum].ten_huyet);
+        $("#c-sign").html(post[IdNum].ky_hieu);
+        $("#c-mean").html(post[IdNum].y_nghia);
+        $("#c-cachxacdinh").html(post[IdNum].vi_tri);
+        $("#c-way").html(post[IdNum].duong_kinh);
+        $("#c-tacdung").html(post[IdNum].tac_dung);
+        $("#c-chutri").html(post[IdNum].chu_tri);
+        $("#c-info").html(
           "Thông tin này được đóng góp bởi : " + post[IdNum].info_1 +" "+post[IdNum].info_2+" "+post[IdNum].info_3+" "+post[IdNum].info_4
         )
         $("#imgHuyet").attr({
@@ -62,14 +62,8 @@ fetch(postAPI)
 
 
   })
-// Tọa độ mặt trước
-$('#b7aee327-6465-4bf1-9cab-da6272c1120d').click(function (e) {
-  let posX = $(this).position().left, posY = $(this).position().top;
-  $("#toadoX").text("Tọa độ X : " + Math.round((e.pageX - posX) / (727.5 / 242)));
-  $("#toadoY").text("Tọa độ Y : " + Math.round((e.pageY - posY) / (727.5 / 242)))
 
-  // alert("Tọa độ X : "+ (e.pageX - posX)/(727.5/242) + ' | '+ "Tọa độ Y : " + (e.pageY - posY)/(452/151));
-});
+// Tọa độ mặt trước
 // Lấy tọa độ mặt bên
 $('#toa_do_mat_ben').click(function (e) {
   let posX = $(this).position().left, posY = $(this).position().top;

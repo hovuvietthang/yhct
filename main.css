@@ -1367,4 +1367,17 @@ body .ui-tooltip {
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;
 }
-1 */
+#thon_mattruoc {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	opacity: 0.5;
+}
+circle {
+	margin: 0;
+	padding: 0;
+}
+
+#imgHuyet {
+	width: 100%;
+}
